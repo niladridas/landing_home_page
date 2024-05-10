@@ -85,4 +85,10 @@
     margin: 0 !important; /* Remove margins */
     /* border: 1px solid #000; */
     padding: 10px;
+    overflow: hidden; /* Ensure images do not overflow */
+  }
+
+  .block img {
+    max-width: 100%; /* Ensure image does not exceed block width */
+    height: auto; /* Maintain aspect ratio */
   }
