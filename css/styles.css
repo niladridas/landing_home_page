@@ -83,9 +83,9 @@
   .block {
     flex: 1;
     margin: 0 !important; /* Remove margins */
-    /* border: 1px solid #000; */
     padding: 10px;
-    overflow: hidden; /* Ensure images do not overflow */
+    border: 1px solid #000; /* Optional: Add border around the block */
+    overflow: hidden; 
   }
 
   .block img {
