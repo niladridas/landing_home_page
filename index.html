@@ -8,6 +8,11 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
+
+
+
+
 <body>
 
   <header class="showPage">
@@ -116,6 +121,18 @@
   }
   
   </script> -->
+    <!-- Light/Dark mode toggle button -->
+    <button id="mode-toggle">Toggle Mode</button>
+
+    <!-- JavaScript code to handle mode toggle -->
+    <script>
+      const modeToggle = document.getElementById('mode-toggle');
+      const root = document.documentElement;
+  
+      modeToggle.addEventListener('click', () => {
+        root.classList.toggle('dark-mode');
+      });
+    </script>
 </body>
 </html>
 
