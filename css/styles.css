@@ -85,9 +85,12 @@
     margin: 0 !important; /* Remove margins */
     padding: 10px;
     overflow: hidden; 
+    text-align: center;
   }
 
   .block img {
     max-width: 100%; /* Ensure image does not exceed block width */
     height: auto; /* Maintain aspect ratio */
+    align-items: center;
+    justify-content: center;
   }
