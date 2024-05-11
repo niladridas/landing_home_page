@@ -102,37 +102,25 @@
   <footer>
     <p>All Rights Reserved &copy; 2024 Niladri Das</p>
   </footer>
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const blocks = document.querySelectorAll('.block');
-    
-    blocks.forEach(function(block) {
-      block.style.backgroundColor = getRandomColor();
-    });
-  });
-  
-  function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-  
-  </script> -->
-    <!-- Light/Dark mode toggle button -->
-    <button id="mode-toggle">Toggle Mode</button>
 
-    <!-- JavaScript code to handle mode toggle -->
-    <script>
-      const modeToggle = document.getElementById('mode-toggle');
-      const root = document.documentElement;
   
-      modeToggle.addEventListener('click', () => {
-        root.classList.toggle('dark-mode');
-      });
-    </script>
+  <label class="switch">
+    <input type="checkbox" id="mode-toggle">
+    <span class="slider"></span>
+  </label>
+
+  <script>
+    const modeToggle = document.getElementById('mode-toggle');
+    const root = document.documentElement;
+
+    modeToggle.addEventListener('change', () => {
+      if (modeToggle.checked) {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    });
+  </script>
 </body>
 </html>
 
