@@ -117,7 +117,13 @@ body {
     justify-content: center;
   }
 
-  /* Toggle switch styles */
+/* Toggle switch styles */
+.switch-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
