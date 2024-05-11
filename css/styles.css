@@ -85,8 +85,6 @@
     margin: 0 !important; /* Remove margins */
     padding: 10px;
     overflow: hidden; 
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
   }
 
   .block img {
