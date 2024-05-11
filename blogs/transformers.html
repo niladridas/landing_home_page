@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+
+
+
+
+<body>
+
+  <header class="showPage">
+    <h1>Transformers</h1>
+  </header>
+
+  <section id="section-1">
+    <h1>About Me</h1>
+    <p>At Sandia National Laboratories I design algorithms and tools for
+       Bayesian inference, ML, controls & optimal experiment design. 
+       I have used these tools in material science, climate science, power systems, satellites tracking and sensor allocation, & robotics for learning & control. 
+      </br>
+      </p>
+    </p>
+
+  </section>
+
+
+
+
+
+
+  <footer>
+    <p>All Rights Reserved &copy; 2024 Niladri Das</p>
+  </footer>
+
+  <!-- Light/Dark mode toggle switch -->
+  <div class="switch-container">
+    <label class="switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <script>
+    const modeToggle = document.getElementById('mode-toggle');
+    const root = document.documentElement;
+
+    modeToggle.addEventListener('change', () => {
+      if (modeToggle.checked) {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    });
+  </script>
+</body>
+</html>
+
