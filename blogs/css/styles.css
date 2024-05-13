@@ -179,3 +179,12 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+blockquote {
+  border-left: 4px solid #3498db; /* Add a left border with a blue color */
+  margin: 0 0 20px; /* Add some margin for better spacing */
+  padding: 0 20px; /* Add padding for better readability */
+  color: #555; /* Set text color to a darker shade */
+  font-style: italic; /* Italicize the text */
+  background-color: #eaf7ed; /* Set background color to a lighter shade of green */
+}
