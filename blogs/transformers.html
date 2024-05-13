@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 
@@ -45,10 +47,30 @@
         <img src="./codes/media/videos/encoder_decoder/480p15/encoderdecorder1.gif" alt="Image">
       </div>
       </div>
-
-One of the earliest work to design a NMT is here:
-<a href="https://arxiv.org/pdf/1409.0473" target=&ldquo;blank&rdquo;><i class="ai ai-arxiv-square ai-1.6x"></i></a>
-</a>
+      <p>
+        The structural model for such NMT is a encoder-decoder pair that takes in a group of words
+        in English and outputs a group of words in French that is the translation. This structure is made
+        out parameters that needs to be learnt. If the French translation is the output \(\boldsymbol{y}\)
+        and the English words are the input \(\boldsymbol{x}\), we define \(p(\boldsymbol{y}|\boldsymbol{x})\),
+        determined by the encoder-decoder structure as function which when learnt, is maximum for a correct translation
+        pair of English and French group of words. For a new group of English words that needs translation, we would then
+        simply pass it through the encoder-decoder learnt structure to generate the French translation.
+      </p>
+    </br>
+      </section>
+      </section>
+      <p>One of the earliest work to design a NMT is here (2016):
+      <a href="https://arxiv.org/pdf/1409.0473" target=&ldquo;blank&rdquo;><i class="ai ai-arxiv-square ai-1.6x"></i></a>
+      </a>
+      <blockquote>
+        <p>A potential issue with this encoder–decoder approach is that a neural network needs to be able to
+        compress all the necessary information of a source sentence into a fixed-length vector. This may
+        make it difficult for the neural network to cope with long sentences, especially those that are longer
+        than the sentences in the training corpus. Cho et al. (2014b) showed that indeed the performance of
+        a basic encoder–decoder deteriorates rapidly as the length of an input sentence increases.</p>
+    </blockquote>
+    </p>
+    The proposed solution was <b>align and translate</b>.
   </section>
 
 
